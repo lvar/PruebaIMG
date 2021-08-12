@@ -30,7 +30,6 @@
 </style>
 
 <body style="margin : 0px; overflow: hidden;">
-  <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
@@ -40,17 +39,16 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
-    <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
     <a-nft
       type="nft"
-      url="./assets/IMG"
+      url="assets/IMG"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
       smoothThreshold="5"
     >
       <a-entity
-        gltf-model="./assets/Merge2.glb"
+        gltf-model="assets/Merge2.glb"
         scale="5 5 5"
         position="50 150 0"
       >
